@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Truckers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_pack_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="nav-truck" src="<%= image_path('truck_grey.png') %>" width="37" height="37"/>
+        </div>
+        <ul class="nav nav-tabs pull-right">
+            <li>
+              <%= link_to 'Register' %>
+            </li>
+            <li>
+              <%= link_to 'Login' %>
+            </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span8">
+        <% if flash.notice %>
+          <div class="alert alert-block alert-info">
+            <button type="button" class="close" data-dismiss="alert">×
+            <%= flash.notice %>
+          </div>
+        <% end %>
+        <% if flash.alert %>
+          <div class="alert alert-block alert-error">
+            <button type="button" class="close" data-dismiss="alert">×
+            <%= flash.alert %>
+          </div>
+        <% end %>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
