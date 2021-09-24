@@ -19,24 +19,24 @@ Driver users are able to look at their company's fleet and reserve a truck.
 ### Tasks
 
 1. Create a `Truck` model, with the following columns:
-   name
-   company_id
-   type
-   year
-   capacity
-   reserved (Bool)
-   timestamps
+  * name
+  * company_id
+  * type
+  * year
+  * capacity
+  * reserved (Bool)
+  * timestamps
 
 2. Add a `TrucksController` to manage:
-   viewing a list of trucks
-   viewing one single truck
-   creating a new truck (admin only)
-   editing an existing truck (admin only)
-   reserve a truck (driver)
-   deleting a truck (admin only)
+  * viewing a list of trucks
+  * viewing one single truck
+  * creating a new truck (admin only)
+  * editing an existing truck (admin only)
+  * reserve a truck (driver)
+  * deleting a truck (admin only)
 
 3. Make sure the `TrucksController` is tested
 
 4. Define two User roles: `admin` and `driver`
-   `admin` Users should be able to add, edit, and delete trucks
-   `driver` Users should be able to view and reserve trucks
+  * `admin` Users should be able to add, edit, and delete trucks
+  * `driver` Users should be able to view and reserve trucks
