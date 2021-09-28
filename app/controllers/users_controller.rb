@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+
+  def new
+  end
+
   # POST /users
   def create
     @user = User.new(params[:user])
