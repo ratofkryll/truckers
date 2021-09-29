@@ -62,6 +62,8 @@ I stuck close to the tasks given for this exercise. Other changes I would make, 
 * Attach start and end dates to reservations.
 * Create a user profile that allows users to update their information and see a list of their reservations.
 
+Please let me know if you have any feedback or questions.g
+
 ### Tasks
 
 1. Create a `Truck` model, with the following columns:
