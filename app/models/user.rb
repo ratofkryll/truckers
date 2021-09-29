@@ -7,7 +7,8 @@ class User < ActiveRecord::Base
   validates :name, :email, :presence => true
   validates :email, :uniqueness => { :case_sensitive => false }
   validates :email, :format => { :with => /@/, :message => " is invalid" }
-
+  validates :role, inclusion: { in: ['driver', 'admin']}
+  
   def password
     password_hash ? @password ||= BCrypt::Password.new(password_hash) : nil
   end

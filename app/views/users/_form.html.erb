@@ -1,0 +1,12 @@
+<%= semantic_form_for users_create_path do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :company, as: :select, collection: Company.all %>
+    <%= f.input :email %>
+    <%= f.input :password %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
