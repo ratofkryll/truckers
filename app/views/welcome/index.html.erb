@@ -1,2 +1,7 @@
 <h1>Welcome to Truckers</h1>
-<p>You can check what trucks are available through your company.</p>
+
+<% if current_user %>
+  <p><%= link_to "Click here", trucks_path %> to view trucks available through your company.</p>
+<% else %>
+  <p><%= link_to "Log in", sessions_new_path %> to check what trucks are available through your company.</p>
+<% end %>

@@ -15,12 +15,18 @@
           <img class="nav-truck" src="<%= image_path('truck_grey.png') %>" width="37" height="37"/>
         </div>
         <ul class="nav nav-tabs pull-right">
-            <li>
-              <%= link_to 'Register', new_user_path %>
-            </li>
-            <li>
-              <%= link_to 'Login', sessions_new_path %>
-            </li>
+            <% if current_user %>
+              <li>
+                <%= link_to 'Logout', logout_path, method: :post %>
+              </li>
+            <% else %>
+              <li>
+                <%= link_to 'Register', new_user_path %>
+              </li>
+              <li>
+                <%= link_to 'Login', sessions_new_path %>
+              </li>
+            <% end %>
           </ul>
       </div>
     </nav>
