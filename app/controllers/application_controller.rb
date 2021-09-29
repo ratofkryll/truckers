@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user
 
+  rescue_from 'CanCan::AccessDenied' do |exception|
+    render plain: "Forbidden", status: :forbidden
+  end
+
   private
 
   def current_user

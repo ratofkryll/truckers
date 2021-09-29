@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: F-350
+  company: uhaul
+  type: 1 ton
+  year: 2022
+  capacity: 2000
+  reserved: false
+
+two:
+  name: F-250
+  company: uhaul
+  type: 3/4 ton
+  year: 2020
+  capacity: 1500
+  reserved: false

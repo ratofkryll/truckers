@@ -1,0 +1,13 @@
+admin:
+  company: uhaul
+  name: 'admin'
+  role: 'admin'
+  email: 'admin@uhaul.com'
+  password_hash: '$2a$12$ZO7UjnxORLVwN3YlOHzBguOCq6GmEb9JOHv4lCzorDoXcQ.Yvgh4y' # 123456
+
+driver:
+  company: uhaul
+  name: 'driver'
+  role: 'driver'
+  email: 'driver@uhaul.com'
+  password_hash: '$2a$12$ZO7UjnxORLVwN3YlOHzBguOCq6GmEb9JOHv4lCzorDoXcQ.Yvgh4y' # 123456

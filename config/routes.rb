@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  resources :trucks do
+    member do
+      put :reserve
+    end
+  end
   root :to => "welcome#index"
 
   get 'welcome/index'
   get 'sessions/new'
   get 'register' => 'trucks#new', :as => :register
+  get 'companies/new'
   get 'companies/create'
   get 'users/new'
   post 'users/create'
