@@ -1,4 +1,4 @@
-<%= semantic_form_for users_create_path do |f| %>
+<%= semantic_form_for @user do |f| %>
   <%= f.inputs do %>
     <%= f.input :name %>
     <%= f.input :company, as: :select, collection: Company.all %>
@@ -7,6 +7,6 @@
   <% end %>
 
   <%= f.actions do %>
-    <%= f.action :submit, :as => :input %>
+    <%= f.action :submit, label: 'Regiser', :as => :input %>
   <% end %>
 <% end %>
