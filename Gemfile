@@ -24,11 +24,16 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
+# User Formtastic for easier form building
+gem 'formtastic', '~> 4.0'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'cancancan'
+gem 'hotwire-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,6 +54,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rexml', '~> 3.2', '>= 3.2.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
