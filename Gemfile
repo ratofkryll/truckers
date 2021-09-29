@@ -24,7 +24,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
-# User Formtastic for easier form building
+# Use Formtastic for easier form building
 gem 'formtastic', '~> 4.0'
 
 # Use Active Storage variant
@@ -32,7 +32,10 @@ gem 'formtastic', '~> 4.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+
+# Use CanCanCan for access control
 gem 'cancancan'
+# Use Hotwire for reserve/unreserve component in trucks#index
 gem 'hotwire-rails'
 
 group :development, :test do

@@ -26,6 +26,7 @@ class TrucksController < ApplicationController
   # POST /trucks or /trucks.json
   def create
     @truck = Truck.new(truck_params)
+    @truck.company_id = current_user.company_id
 
     respond_to do |format|
       if @truck.save
